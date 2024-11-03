@@ -1,0 +1,71 @@
+body {
+  background-image: url("/public/images/bg.jpg");
+  background-size: 100%;
+  position: absolute;
+}
+.form {
+  width: 400px;
+}
+.form button {
+  margin: 10px;
+}
+.form h3 {
+  float: left;
+  margin-right: 3px;
+}
+.form .isActive {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.h3-button {
+  position: relative; /* Для позиционирования псевдоэлемента */
+  cursor: pointer; /* Курсор в виде указателя */
+  transition: color 0.3s ease; /* Плавное изменение цвета */
+}
+
+.h3-button:hover {
+  color: #5dae36; /* Изменение цвета при наведении, можно настроить */
+}
+
+.h3-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5dae36; /* Цвет подчёркивания */
+  transition: width 0.3s ease; /* Плавное появление линии */
+}
+
+.h3-button:hover::after {
+  width: 100%; /* Линия растягивается на всю ширину при наведении */
+}
+
+.block {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.block-form {
+  align-items: center;
+  width: 400px;
+  height: 500px;
+}
+
+.block input {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 500px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  backdrop-filter: blur(20px);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px;
+  align-content: center;
+}

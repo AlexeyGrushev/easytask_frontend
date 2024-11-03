@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+input {
+  border: none;
+  border-bottom: 2px solid #ccc; /* Серое нижнее подчёркивание */
+  outline: none;
+  padding: 12px 0; /* Увеличенный отступ для высоты */
+  font-size: 18px; /* Увеличенный размер шрифта */
+  width: 100%; /* Растягиваем на всю ширину */
+  transition: border-color 0.4s ease, font-size 0.4s ease; /* Плавный переход для цвета и размера */
+}
+
+input:focus {
+  border-bottom-color: #7fd751; /* Зеленое подчёркивание при фокусе */
+}
+
+button {
+  background-color: #7fd751; /* Зеленый цвет для фона */
+  color: white; /* Белый цвет для текста */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Скругленные края */
+  padding: 12px 24px; /* Отступы для увеличения размера кнопки */
+  font-size: 18px; /* Крупный размер шрифта */
+  cursor: pointer; /* Курсор-указатель при наведении */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Плавный переход */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Тень для объема */
+}
+
+button:hover {
+  background-color: #6ac43e; /* Более насыщенный зеленый при наведении */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Увеличиваем тень */
+}
+
+button:active {
+  background-color: #5dae36; /* Темно-зеленый при нажатии */
+  transform: scale(0.98); /* Легкое уменьшение для эффекта нажатия */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .block {
+  background-color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  border: solid 3px #7fd751;
+  border-radius: 10px;
+  padding: 15px;
+  /* background-color: rgb(187, 187, 187); */
+  /* margin: 3px; */
+/* } */
+
+.block {
+  display: inline-block;
+  background-color: #ffffff; /* Белый фон */
+  border-radius: 10px; /* Скругленные углы */
+  padding: 15px; /* Отступы внутри блока */
+  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.1), /* Тень внутри для тиснения */
+              inset -3px -3px 8px rgba(255, 255, 255, 0.3), /* Светлая тень для эффекта */
+              3px 3px 12px rgba(0, 0, 0, 0.15); /* Внешняя тень для мягкого рельефа */
+  border: 1px solid #e0e0e0; /* Светлая рамка вокруг блока */
+  transition: box-shadow 0.3s ease; /* Плавный переход тени */
+}
+
+/* Эффект при наведении: усиливаем тиснение */
+.block:hover {
+  box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.01),
+              inset -4px -4px 10px rgba(255, 255, 255, 0.4),
+              8px 8px 14px rgba(0, 0, 0, 0.4);
+}
+
+.logo-green {
+  color: #5dae36;
+  font-family: "Wellfleet", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.logo-black {
+  color: #000000;
+  font-family: "Wellfleet", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.logo-white {
+  color: #ffffff;
+  font-family: "Wellfleet", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
