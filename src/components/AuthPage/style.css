@@ -1,8 +1,13 @@
-body {
+.block-bg {
+  width: 100%;
+  height: 100vh; /* Занимает всю высоту экрана */
   background-image: url("/public/images/bg.jpg");
-  background-size: 100%;
-  position: absolute;
+  background-size: cover; /* Картинка покрывает весь блок */
+  background-position: center; /* Центрируем изображение */
+  filter: blur(2px);
+  backdrop-filter: blur(10px);  /* Применяем размытие */
 }
+
 .form {
   width: 400px;
 }
@@ -15,7 +20,7 @@ body {
 }
 .form .isActive {
   font-size: 36px;
-  color: #ffffff;
+  color: #5dae36;
 }
 
 .h3-button {
@@ -58,12 +63,14 @@ body {
 }
 
 .sidebar {
+  opacity: 97%;
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 500px; /* Set the width of the sidebar */
+  width: 650px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
+  background-color: #ebebeb;
   backdrop-filter: blur(20px);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0px;
