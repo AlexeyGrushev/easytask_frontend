@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 
 class AuthForm extends React.Component {
+  //  ------------------------------- Page Logic
   constructor(props) {
     super(props);
     this.state = {
@@ -21,6 +22,7 @@ class AuthForm extends React.Component {
     console.log(value)
   };
 
+  // ------------------------------- Page Markup
   authHeader() {
     return (
       <div
