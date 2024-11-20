@@ -26,7 +26,7 @@ class AuthForm extends React.Component {
   authHeader() {
     return (
       <div
-        className="block"
+        className="auth-block"
         style={{ marginBottom: `10px`, marginTop: `0px`, width: `50%` }}
       >
         <h2
@@ -63,7 +63,7 @@ class AuthForm extends React.Component {
 
   auth() {
     return (
-      <div className="block block-form">
+      <div className="auth-block block-form">
         <form className="form auth">
           <h3 className="isActive">Авторизация</h3>
           <h3>/</h3>
@@ -85,7 +85,7 @@ class AuthForm extends React.Component {
 
   register() {
     return (
-      <div className="block block-form">
+      <div className="auth-block block-form">
         <form className="form auth">
           <h3 className="isActive">Регистрация</h3>
           <h3>/</h3>

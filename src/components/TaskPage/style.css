@@ -1,0 +1,172 @@
+.block {
+  display: block;
+  background-color: rgba(235, 235, 235, 0.95);
+}
+
+.main-block {
+  flex-direction: row; /* Горизонтальное выравнивание */
+  width: 340vh;
+  height: 80vh;
+  align-items: stretch;
+}
+
+.list-block::-webkit-scrollbar{
+  display: none;
+}
+
+.block-header {
+  margin-top: 0px;
+}
+
+.list-sidebar {
+  display: block;
+  width: 90vh;
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.list-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.list-block {
+  flex: 1;
+  margin-top: 15px;
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.task-buttons {
+  display: flex;
+  align-items: self-end;
+  justify-content: right;
+}
+
+.task-buttons .button {
+  height: 1.5em;
+  width: 1.5em;
+  transition: transform 0.7s ease;
+}
+
+.task-buttons .button:hover {
+  transform: scale(1.15);
+}
+
+.task-header {
+  display: flex;
+  text-align: left;
+  justify-content: space-between; /* Распределяем элементы по краям */
+  align-items: center; /* Выравниваем по центру по вертикали */
+  width: 100%;
+}
+
+.list-block li {
+  border-left: solid 3px;
+  border-radius: 0px 10px 10px 0px;
+  list-style-type: none;
+  padding: 10px;
+  margin-top: 15px;
+  margin-left: 0px;
+  margin-bottom: 15px;
+  background-color: rgba(128, 215, 81, 0.7);
+}
+
+.list-block a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.list-block ul {
+  list-style-type: none; /* Убираем маркеры */
+  padding: 0;
+  margin: 0;
+}
+
+/* Стиль для каждого элемента задачи */
+.list-block li {
+  background-color: #f9f9f9; /* Светлый фон */
+  border-radius: 8px; /* Скругленные углы */
+  margin: 12px 0; /* Отступы между задачами */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для эффекта */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* При наведении на задачу, она немного увеличивается */
+.list-block li:hover {
+  transform: translateY(-1px); /* Плавный подъем */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Усиление тени */
+}
+
+/* Стиль для названия задачи */
+.list-block h2 {
+  font-size: 1.5em; /* Увеличиваем размер шрифта */
+  margin: 0 0 10px 0; /* Отступ снизу */
+  color: #333; /* Тёмно-серый цвет для заголовков */
+  font-weight: bold;
+}
+
+/* Стиль для сроков выполнения задачи */
+.list-block p {
+  font-size: 1em;
+  color: #888; /* Серый цвет для текста */
+  margin: 5px 0;
+}
+
+/* Стиль для подзадач */
+.list-block ul ul {
+  margin-left: 0px; /* Отступ слева для подзадач */
+  list-style-type: none; /* Убираем маркеры */
+  padding: 0;
+}
+
+/* Стиль для каждого элемента подзадачи */
+.list-block ul ul li {
+  display: flex;
+  text-align: left;
+  background-color: #fff; /* Белый фон для подзадач */
+  border-left: 4px solid #7fd751; /* Зелёная линия слева */
+  margin: 6px 0; /* Отступы между подзадачами */
+  padding: 10px;
+  font-size: 1em; /* Размер шрифта для подзадач */
+  color: #666; /* Тёмно-серый цвет для текста подзадач */
+  transition: background-color 0.3s ease;
+}
+
+/* При наведении на подзадачу фон меняется на лёгкий зелёный */
+.list-block ul ul li:hover {
+  background-color: #eaf5d9; /* Легкий зеленый оттенок */
+}
+
+/* Стиль для задач без подзадач */
+.list-block p {
+  font-style: italic;
+  color: #b0b0b0; /* Светлый серый для текста "Нет подзадач" */
+}
+
+/* Стиль для разделителей задач */
+.list-block h3 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #333;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.list-block .create-task-hot {
+  display: block;
+  background-color: #f9f9f9; /* Светлый фон */
+  border-radius: 8px; /* Скругленные углы */
+  margin: 12px 0; /* Отступы между задачами */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для эффекта */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-new-task-hot {
+  justify-content: left;
+  display: flex;
+  margin: 0 1px;
+  position: relative;
+  justify-items: left;
+}

@@ -1,3 +1,22 @@
+.auth-block {
+  display: inline-block;
+  background-color: #ffffff; /* Белый фон */
+  border-radius: 10px; /* Скругленные углы */
+  padding: 15px; /* Отступы внутри блока */
+  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.1), /* Тень внутри для тиснения */
+              inset -3px -3px 8px rgba(255, 255, 255, 0.3), /* Светлая тень для эффекта */
+              3px 3px 12px rgba(0, 0, 0, 0.15); /* Внешняя тень для мягкого рельефа */
+  border: 1px solid #e0e0e0; /* Светлая рамка вокруг блока */
+  transition: box-shadow 0.3s ease; /* Плавный переход тени */
+}
+
+/* Эффект при наведении: усиливаем тиснение */
+.auth-block:hover {
+  box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.01),
+              inset -4px -4px 10px rgba(255, 255, 255, 0.4),
+              8px 8px 14px rgba(0, 0, 0, 0.4);
+}
+
 .block-bg {
   width: 100%;
   height: 100vh; /* Занимает всю высоту экрана */

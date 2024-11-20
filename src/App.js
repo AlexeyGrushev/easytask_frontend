@@ -1,13 +1,14 @@
+import { RouterProvider } from 'react-router-dom';
+
 import logo from "./logo.svg";
 import "./App.css";
-import AuthPage from "./components/AuthPage/Auth";
-import MainPage from "./components/MainPage/MainPage";
+
+import router from './routing';
 
 function App() {
   return (
     <div className="App">
-      {/* <AuthPage/> */}
-      <MainPage/>
+      <RouterProvider router={router} />
     </div>
   );
 }

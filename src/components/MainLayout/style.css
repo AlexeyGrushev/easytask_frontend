@@ -1,0 +1,47 @@
+body {
+  background-image: url(/public/images/bg.jpg);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #5dae36;
+  margin-bottom: 15px;
+  opacity: 100%;
+}
+
+.header-block {
+  background-color: #e61212;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+header .header-controls {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid #333 2px;
+  padding-top: 7px;
+}
+
+header .header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+header .header-profile {
+  display: flex;
+  justify-self: right;
+}
+
+.content-block {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: left;
+  align-items: center;
+}
+
+.block {
+  display: block;
+  background-color: rgba(235, 235, 235, 0.95);
+}
