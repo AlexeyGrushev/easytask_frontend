@@ -2,7 +2,7 @@ body {
   background-image: url(/public/images/bg.jpg);
 }
 
-header {
+.desktopL header {
   display: flex;
   justify-content: space-between;
   background-color: #5dae36;
@@ -10,30 +10,30 @@ header {
   opacity: 100%;
 }
 
-.header-block {
+.desktopL .header-block {
   background-color: #e61212;
   padding-top: 7px;
   padding-bottom: 7px;
 }
 
-header .header-controls {
+.desktopL header .header-controls {
   display: flex;
   justify-content: space-between;
   border-top: solid #333 2px;
   padding-top: 7px;
 }
 
-header .header-buttons {
+.desktopL header .header-buttons {
   display: flex;
   gap: 10px;
 }
 
-header .header-profile {
+.desktopL header .header-profile {
   display: flex;
   justify-self: right;
 }
 
-.content-block {
+.desktopL .content-block {
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -41,7 +41,11 @@ header .header-profile {
   align-items: center;
 }
 
-.block {
+.desktopL .block {
   display: block;
   background-color: rgba(235, 235, 235, 0.95);
+}
+
+.desktopL .active {
+  color: #5dae36;
 }

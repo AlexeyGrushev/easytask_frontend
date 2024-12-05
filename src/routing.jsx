@@ -1,11 +1,14 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Main
-import MainPage from "./components/MainLayout/MainLayout";
+import { MainPage } from "./components/MainLayout/MainLayout";
 import AuthPage from "./components/AuthPage/Auth";
 
 // Children
-import TasksPage from "./components/TaskPage/TasksPage";
+import TasksPage from "./components/Tasks/TasksPage";
+import {loadTasks} from "./components/Tasks/loader"
+import TasksMain from "./components/Tasks/components/taskComponent"
+import { TestComponent } from "./components/testComponent";
 
 
 const router = createBrowserRouter([
@@ -16,6 +19,13 @@ const router = createBrowserRouter([
       {
         path: "/tasks",
         element: <TasksPage />,
+        children: [
+          {
+            path: "/tasks/:list_id",
+            loader: loadTasks,
+            element: <TasksMain/>
+          }
+        ]
       },
       {
         path: "/schedule",
@@ -31,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <h1>Профиль</h1>,
+        element: <TestComponent/>,
       },
 
     ],
